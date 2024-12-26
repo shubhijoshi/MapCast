@@ -1,0 +1,203 @@
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", serif;
+  background-color: #f4f4f9;
+  color: #333;
+  /*transition: background-color 0.3s ease, color 0.3s ease;*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1f79c8;
+  color: #fff;
+  font-family: "Roboto Condensed", serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Condensed", serif;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #1e90ff;
+} */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toggle-label {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: "Roboto Condensed", serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+#map {
+  height: 85%;
+  width: 65%;
+  margin-top: 3vh;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+  width: 30%;
+  margin-top: 3vh;
+}
+
+#search {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  /*background-color: #fff;*/
+  background-image: url(cloud2.jpg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* transition: all 0.3s ease;*/
+  font-family: "Roboto Condensed", serif;
+}
+
+#search:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#search input {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+ /* transition: border 0.3s ease; */
+  font-family: "Roboto Condensed", serif;
+}
+
+#search input:focus {
+  border-color: #1e90ff;
+}
+
+#search button {
+  padding: 12px 25px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /*transition: background-color 0.3s;*/
+  font-size: 16px;
+  font-family: "Roboto Condensed", serif;
+}
+
+#search button:hover {
+  background-color: #1f79c8;
+}
+
+#info {
+ /* background-color:#1e90ff;*/
+ background-image: url(city4.jpg);
+ background-position: center;  /* Center the image */
+  background-size: cover; 
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  /*transition: all 0.3s ease;*/
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Roboto Condensed", serif;
+}
+
+#info b {
+  font-weight: bold;
+}
+
+#info p {
+  margin: 10px 0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+nav.dark-mode {
+  background-color: #222;
+}
+
+#search.dark-mode {
+  background-color: #444;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/*#info.dark-mode {
+  background-color: #444;
+  color: #fff;
+}*/
+
+#search input.dark-mode {
+  border-color: #ddd;
+  background-color: #555;
+  color: #fff;
+}
+
+#search button.dark-mode {
+  background-color: #555;
+}
+
+#search.dark-mode {
+  background-image: url(cloud2bw.jpg); /* Replace with your dark mode image */
+}
+
+#info.dark-mode {
+  background-image: url(city4bw.png); /* Replace with your dark mode image */
+  color:#040504; /* Ensure text color contrasts with the dark background */
+}
+
+
+#toggle-label.dark-mode {
+  color: #fff;
+}
