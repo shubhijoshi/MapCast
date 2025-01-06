@@ -7,7 +7,6 @@ body {
   font-family: "Roboto Condensed", serif;
   background-color: #f4f4f9;
   color: #333;
-  /*transition: background-color 0.3s ease, color 0.3s ease;*/
 }
 
 nav {
@@ -24,29 +23,6 @@ h1 {
   margin: 0;
   font-size: 24px;
 }
-
-/* ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  margin-left: 20px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto Condensed", serif;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-ul li a:hover {
-  color: #1e90ff;
-} */
 
 .theme-toggle {
   display: flex;
@@ -85,14 +61,12 @@ ul li a:hover {
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
-  /*background-color: #fff;*/
   background-image: url(cloud2.jpg);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
- /* transition: all 0.3s ease;*/
   font-family: "Roboto Condensed", serif;
 }
 
@@ -108,7 +82,6 @@ ul li a:hover {
   font-size: 14px;
   margin-bottom: 10px;
   outline: none;
- /* transition: border 0.3s ease; */
   font-family: "Roboto Condensed", serif;
 }
 
@@ -123,7 +96,6 @@ ul li a:hover {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  /*transition: background-color 0.3s;*/
   font-size: 16px;
   font-family: "Roboto Condensed", serif;
 }
@@ -133,9 +105,8 @@ ul li a:hover {
 }
 
 #info {
- /* background-color:#1e90ff;*/
  background-image: url(city4.jpg);
- background-position: center;  /* Center the image */
+ background-position: center;  
   background-size: cover; 
   color: #333;
   padding: 15px;
@@ -144,7 +115,6 @@ ul li a:hover {
   width: 100%;
   height: auto;
   overflow: auto;
-  /*transition: all 0.3s ease;*/
   font-size: 14px;
   line-height: 1.6;
   font-family: "Roboto Condensed", serif;
@@ -173,11 +143,6 @@ nav.dark-mode {
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
-/*#info.dark-mode {
-  background-color: #444;
-  color: #fff;
-}*/
-
 #search input.dark-mode {
   border-color: #ddd;
   background-color: #555;
@@ -189,12 +154,12 @@ nav.dark-mode {
 }
 
 #search.dark-mode {
-  background-image: url(cloud2bw.jpg); /* Replace with your dark mode image */
+  background-image: url(cloud2bw.jpg); 
 }
 
 #info.dark-mode {
-  background-image: url(city4bw.png); /* Replace with your dark mode image */
-  color:#040504; /* Ensure text color contrasts with the dark background */
+  background-image: url(city4bw.png); 
+  color:#040504; 
 }
 
 
