@@ -48,7 +48,7 @@ function getWeatherEmoji(weatherDescription) {
 
 // Fetch current weather data
 async function fetchWeather(lat, lon) {
-  const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; // Replace with your API key
+  const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
   try {
@@ -61,7 +61,7 @@ async function fetchWeather(lat, lon) {
 
 // Fetch 5-day weather forecast
 async function fetchForecast(lat, lon) {
-  const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; // Replace with your API key
+  const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; 
   const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
   try {
@@ -78,7 +78,7 @@ document.getElementById("search-btn").addEventListener("click", async function (
   const searchQuery = document.getElementById("place").value;
 
   if (searchQuery) {
-    const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; // Replace with your API key
+    const apiKey = "cadd09cea720b0cee953d8ae35fc9edd"; 
     const geocodingUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${searchQuery}&limit=1&appid=${apiKey}`;
 
     try {
@@ -182,18 +182,6 @@ map.on("click", async function (e) {
       .bindPopup(`<b>Location:</b> ${weatherData.name || "Unknown"} ${weatherEmoji}`)
       .openPopup();
 
-    // // Create forecast details for the next few days
-    // const forecastDetails = forecastData.list
-    //   .slice(0, 5) // Get the first 5 intervals (roughly 1 per day)
-    //   .map((entry) => {
-    //     const date = new Date(entry.dt * 1000).toLocaleDateString();
-    //     const temp = entry.main.temp;
-    //     const desc = entry.weather[0].description;
-    //     const emoji = getWeatherEmoji(desc);
-    //     return `<b>${date}:</b> ${temp}°C, ${desc} ${emoji}`;
-    //   })
-    //   .join("<br>");
-
     // Group data by distinct days
 const groupedByDay = forecastData.list.reduce((acc, entry) => {
   const date = new Date(entry.dt * 1000).toLocaleDateString(); // Extract only the date
@@ -296,5 +284,3 @@ themeToggle.addEventListener("change", function () {
 });
 
 
-
-//very nice, but just one thing that when i search the place, it does not show marker there, although it updates in the info box
