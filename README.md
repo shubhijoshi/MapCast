@@ -8,13 +8,13 @@ MapCast is an interactive weather map project which provides real-time weather i
 2. **Search Bar and Pinpointing**: Use the search bar to find a specific location, and the map will pinpoint it while displaying the weather information.
 3. **Custom Info Box**: Displays detailed weather information, including a 5-day weather forecast for the selected location.
 4. **Dark/Bright Mode**: Toggle between dark and bright modes for a more comfortable viewing experience.
-
 ## Technologies Used
 
-- **Leaflet.js**: For map rendering and interactivity.
-- **JavaScript**: For client-side logic and data handling.
-- **HTML/CSS**: For structuring and styling the page.
-- **OpenWeatherMap API**: For fetching real-time weather data.
+- **HTML/CSS**: For structuring and styling the web pages.
+- **JavaScript**: For implementing client-side logic and dynamic behavior.
+- **Leaflet.js**: Lightweight JavaScript library for rendering interactive maps.
+- **Bootstrap**: Used for creating a responsive navigation bar.
+- **OpenWeatherMap API**: Provides real-time weather data integrated with the map.
 
 ## Setup
 
