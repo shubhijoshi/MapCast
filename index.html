@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MapCast</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+  <link rel="icon" href="logo4.png" type="image/png">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+  </style>
+<body>
+  <nav> 
+    <h1>MapCast - Real time weather insights on maps!🌍🚀 </h1>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <span id="toggle-label">Light Mode</span>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="map"></div>
+    <div id="right-side">
+      <div id="search">
+        <input type="text" id="place" placeholder="Search for a place..." />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="info">Just click on the map!</div>
+      
+    </div>
+  </div>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
